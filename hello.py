@@ -9,4 +9,4 @@ def wa(env, start_response):
     for i in resp:
         r += i + "\n"
     start_response(status, headers)
-    return [ r ]
+    return [ r.encode() ]
