@@ -2,7 +2,7 @@ def wa(env, start_response):
     import re
     status = '200 OK'
     headers = [
-      ('Context-Type', 'text/plain')
+      ('Content-Type', 'text/plain')
     ]
     resp = env['QUERY_STRING'].split("&")
     r = ''
